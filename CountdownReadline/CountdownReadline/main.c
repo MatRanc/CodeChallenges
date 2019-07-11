@@ -21,18 +21,28 @@ int main(int argc, const char * argv[]) {
     int startingNumber = atoi(imputNumber);
     
     //sets up i as 99, if i is greater than 0 do the following and take one away from i every time
-    for (int i = startingNumber; i >= 0; i--) {
+    for (int i = startingNumber; i >= 0;) {
+       
+        i--;
+        
         //prints the number
         printf("%d\n", i);
-        //decreases by i by 3 every time
-        i=i-3;
-        //if the number is divisable by 5, the code will continue while printing the found one output instead of "break" which would skip the rest
-        if (i % 5 == 0) {
-            continue;
-        }
-        printf("%d  --  Found one!\n", i);
-    }
+        
     
+    //decreases i by 3 every time
+        i=i-3;
+        
+    //if the number is divisable by 5, the code will continue while printing the found one output instead of "break" which would skip the rest
+        if (i % 8 == 0) {
+            printf("%d  --  Found one!\n", i);
+   
+        
+        
+        
+            
+        
+        }
+}
     
     return 0;
 }
