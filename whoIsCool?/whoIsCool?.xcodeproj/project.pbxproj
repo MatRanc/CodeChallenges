@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E559CAE22D411E000E7ED65 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E559CAD22D411E000E7ED65 /* main.c */; };
-		4EDFA49C22D7CC2100FEF555 /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDFA49B22D7CC2100FEF555 /* libreadline.tbd */; };
+		4EDFA4AA22D7CD0300FEF555 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFA4A922D7CD0300FEF555 /* main.c */; };
+		4EDFA4B222D7CD0D00FEF555 /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDFA4B122D7CD0D00FEF555 /* libreadline.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4E559CA822D411E000E7ED65 /* CopyFiles */ = {
+		4EDFA4A422D7CD0300FEF555 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,52 +24,52 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4E559CAA22D411E000E7ED65 /* Countdown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Countdown; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E559CAD22D411E000E7ED65 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		4EDFA49B22D7CC2100FEF555 /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
+		4EDFA4A622D7CD0300FEF555 /* whoIsCool? */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "whoIsCool?"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EDFA4A922D7CD0300FEF555 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4EDFA4B122D7CD0D00FEF555 /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4E559CA722D411E000E7ED65 /* Frameworks */ = {
+		4EDFA4A322D7CD0300FEF555 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EDFA49C22D7CC2100FEF555 /* libreadline.tbd in Frameworks */,
+				4EDFA4B222D7CD0D00FEF555 /* libreadline.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E559CA122D411E000E7ED65 = {
+		4EDFA49D22D7CD0300FEF555 = {
 			isa = PBXGroup;
 			children = (
-				4E559CAC22D411E000E7ED65 /* Countdown */,
-				4E559CAB22D411E000E7ED65 /* Products */,
-				4EDFA49A22D7CC2100FEF555 /* Frameworks */,
+				4EDFA4A822D7CD0300FEF555 /* whoIsCool? */,
+				4EDFA4A722D7CD0300FEF555 /* Products */,
+				4EDFA4B022D7CD0D00FEF555 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4E559CAB22D411E000E7ED65 /* Products */ = {
+		4EDFA4A722D7CD0300FEF555 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E559CAA22D411E000E7ED65 /* Countdown */,
+				4EDFA4A622D7CD0300FEF555 /* whoIsCool? */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E559CAC22D411E000E7ED65 /* Countdown */ = {
+		4EDFA4A822D7CD0300FEF555 /* whoIsCool? */ = {
 			isa = PBXGroup;
 			children = (
-				4E559CAD22D411E000E7ED65 /* main.c */,
+				4EDFA4A922D7CD0300FEF555 /* main.c */,
 			);
-			path = Countdown;
+			path = "whoIsCool?";
 			sourceTree = "<group>";
 		};
-		4EDFA49A22D7CC2100FEF555 /* Frameworks */ = {
+		4EDFA4B022D7CD0D00FEF555 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4EDFA49B22D7CC2100FEF555 /* libreadline.tbd */,
+				4EDFA4B122D7CD0D00FEF555 /* libreadline.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,67 +77,67 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E559CA922D411E000E7ED65 /* Countdown */ = {
+		4EDFA4A522D7CD0300FEF555 /* whoIsCool? */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E559CB122D411E000E7ED65 /* Build configuration list for PBXNativeTarget "Countdown" */;
+			buildConfigurationList = 4EDFA4AD22D7CD0300FEF555 /* Build configuration list for PBXNativeTarget "whoIsCool?" */;
 			buildPhases = (
-				4E559CA622D411E000E7ED65 /* Sources */,
-				4E559CA722D411E000E7ED65 /* Frameworks */,
-				4E559CA822D411E000E7ED65 /* CopyFiles */,
+				4EDFA4A222D7CD0300FEF555 /* Sources */,
+				4EDFA4A322D7CD0300FEF555 /* Frameworks */,
+				4EDFA4A422D7CD0300FEF555 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Countdown;
-			productName = Countdown;
-			productReference = 4E559CAA22D411E000E7ED65 /* Countdown */;
+			name = "whoIsCool?";
+			productName = "whoIsCool?";
+			productReference = 4EDFA4A622D7CD0300FEF555 /* whoIsCool? */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4E559CA222D411E000E7ED65 /* Project object */ = {
+		4EDFA49E22D7CD0300FEF555 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Big Nerd Ranch";
 				TargetAttributes = {
-					4E559CA922D411E000E7ED65 = {
+					4EDFA4A522D7CD0300FEF555 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 4E559CA522D411E000E7ED65 /* Build configuration list for PBXProject "Countdown" */;
+			buildConfigurationList = 4EDFA4A122D7CD0300FEF555 /* Build configuration list for PBXProject "whoIsCool?" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 4E559CA122D411E000E7ED65;
-			productRefGroup = 4E559CAB22D411E000E7ED65 /* Products */;
+			mainGroup = 4EDFA49D22D7CD0300FEF555;
+			productRefGroup = 4EDFA4A722D7CD0300FEF555 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E559CA922D411E000E7ED65 /* Countdown */,
+				4EDFA4A522D7CD0300FEF555 /* whoIsCool? */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4E559CA622D411E000E7ED65 /* Sources */ = {
+		4EDFA4A222D7CD0300FEF555 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E559CAE22D411E000E7ED65 /* main.c in Sources */,
+				4EDFA4AA22D7CD0300FEF555 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4E559CAF22D411E000E7ED65 /* Debug */ = {
+		4EDFA4AB22D7CD0300FEF555 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +196,7 @@
 			};
 			name = Debug;
 		};
-		4E559CB022D411E000E7ED65 /* Release */ = {
+		4EDFA4AC22D7CD0300FEF555 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +248,7 @@
 			};
 			name = Release;
 		};
-		4E559CB222D411E000E7ED65 /* Debug */ = {
+		4EDFA4AE22D7CD0300FEF555 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -257,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		4E559CB322D411E000E7ED65 /* Release */ = {
+		4EDFA4AF22D7CD0300FEF555 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -269,25 +269,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E559CA522D411E000E7ED65 /* Build configuration list for PBXProject "Countdown" */ = {
+		4EDFA4A122D7CD0300FEF555 /* Build configuration list for PBXProject "whoIsCool?" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E559CAF22D411E000E7ED65 /* Debug */,
-				4E559CB022D411E000E7ED65 /* Release */,
+				4EDFA4AB22D7CD0300FEF555 /* Debug */,
+				4EDFA4AC22D7CD0300FEF555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E559CB122D411E000E7ED65 /* Build configuration list for PBXNativeTarget "Countdown" */ = {
+		4EDFA4AD22D7CD0300FEF555 /* Build configuration list for PBXNativeTarget "whoIsCool?" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E559CB222D411E000E7ED65 /* Debug */,
-				4E559CB322D411E000E7ED65 /* Release */,
+				4EDFA4AE22D7CD0300FEF555 /* Debug */,
+				4EDFA4AF22D7CD0300FEF555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4E559CA222D411E000E7ED65 /* Project object */;
+	rootObject = 4EDFA49E22D7CD0300FEF555 /* Project object */;
 }

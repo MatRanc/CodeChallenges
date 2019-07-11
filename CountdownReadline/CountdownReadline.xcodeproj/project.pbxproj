@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E559CAE22D411E000E7ED65 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E559CAD22D411E000E7ED65 /* main.c */; };
-		4EDFA49C22D7CC2100FEF555 /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDFA49B22D7CC2100FEF555 /* libreadline.tbd */; };
+		4EDFA4C022D7CE8C00FEF555 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFA4BF22D7CE8C00FEF555 /* main.c */; };
+		4EDFA4C822D7CE9600FEF555 /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDFA4C722D7CE9600FEF555 /* libreadline.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4E559CA822D411E000E7ED65 /* CopyFiles */ = {
+		4EDFA4BA22D7CE8C00FEF555 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,52 +24,52 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4E559CAA22D411E000E7ED65 /* Countdown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Countdown; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E559CAD22D411E000E7ED65 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		4EDFA49B22D7CC2100FEF555 /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
+		4EDFA4BC22D7CE8C00FEF555 /* CountdownReadline */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CountdownReadline; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EDFA4BF22D7CE8C00FEF555 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4EDFA4C722D7CE9600FEF555 /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4E559CA722D411E000E7ED65 /* Frameworks */ = {
+		4EDFA4B922D7CE8C00FEF555 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EDFA49C22D7CC2100FEF555 /* libreadline.tbd in Frameworks */,
+				4EDFA4C822D7CE9600FEF555 /* libreadline.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E559CA122D411E000E7ED65 = {
+		4EDFA4B322D7CE8C00FEF555 = {
 			isa = PBXGroup;
 			children = (
-				4E559CAC22D411E000E7ED65 /* Countdown */,
-				4E559CAB22D411E000E7ED65 /* Products */,
-				4EDFA49A22D7CC2100FEF555 /* Frameworks */,
+				4EDFA4BE22D7CE8C00FEF555 /* CountdownReadline */,
+				4EDFA4BD22D7CE8C00FEF555 /* Products */,
+				4EDFA4C622D7CE9600FEF555 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4E559CAB22D411E000E7ED65 /* Products */ = {
+		4EDFA4BD22D7CE8C00FEF555 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E559CAA22D411E000E7ED65 /* Countdown */,
+				4EDFA4BC22D7CE8C00FEF555 /* CountdownReadline */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E559CAC22D411E000E7ED65 /* Countdown */ = {
+		4EDFA4BE22D7CE8C00FEF555 /* CountdownReadline */ = {
 			isa = PBXGroup;
 			children = (
-				4E559CAD22D411E000E7ED65 /* main.c */,
+				4EDFA4BF22D7CE8C00FEF555 /* main.c */,
 			);
-			path = Countdown;
+			path = CountdownReadline;
 			sourceTree = "<group>";
 		};
-		4EDFA49A22D7CC2100FEF555 /* Frameworks */ = {
+		4EDFA4C622D7CE9600FEF555 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4EDFA49B22D7CC2100FEF555 /* libreadline.tbd */,
+				4EDFA4C722D7CE9600FEF555 /* libreadline.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,67 +77,67 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E559CA922D411E000E7ED65 /* Countdown */ = {
+		4EDFA4BB22D7CE8C00FEF555 /* CountdownReadline */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E559CB122D411E000E7ED65 /* Build configuration list for PBXNativeTarget "Countdown" */;
+			buildConfigurationList = 4EDFA4C322D7CE8C00FEF555 /* Build configuration list for PBXNativeTarget "CountdownReadline" */;
 			buildPhases = (
-				4E559CA622D411E000E7ED65 /* Sources */,
-				4E559CA722D411E000E7ED65 /* Frameworks */,
-				4E559CA822D411E000E7ED65 /* CopyFiles */,
+				4EDFA4B822D7CE8C00FEF555 /* Sources */,
+				4EDFA4B922D7CE8C00FEF555 /* Frameworks */,
+				4EDFA4BA22D7CE8C00FEF555 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Countdown;
-			productName = Countdown;
-			productReference = 4E559CAA22D411E000E7ED65 /* Countdown */;
+			name = CountdownReadline;
+			productName = CountdownReadline;
+			productReference = 4EDFA4BC22D7CE8C00FEF555 /* CountdownReadline */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4E559CA222D411E000E7ED65 /* Project object */ = {
+		4EDFA4B422D7CE8C00FEF555 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Big Nerd Ranch";
 				TargetAttributes = {
-					4E559CA922D411E000E7ED65 = {
+					4EDFA4BB22D7CE8C00FEF555 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 4E559CA522D411E000E7ED65 /* Build configuration list for PBXProject "Countdown" */;
+			buildConfigurationList = 4EDFA4B722D7CE8C00FEF555 /* Build configuration list for PBXProject "CountdownReadline" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 4E559CA122D411E000E7ED65;
-			productRefGroup = 4E559CAB22D411E000E7ED65 /* Products */;
+			mainGroup = 4EDFA4B322D7CE8C00FEF555;
+			productRefGroup = 4EDFA4BD22D7CE8C00FEF555 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E559CA922D411E000E7ED65 /* Countdown */,
+				4EDFA4BB22D7CE8C00FEF555 /* CountdownReadline */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4E559CA622D411E000E7ED65 /* Sources */ = {
+		4EDFA4B822D7CE8C00FEF555 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E559CAE22D411E000E7ED65 /* main.c in Sources */,
+				4EDFA4C022D7CE8C00FEF555 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4E559CAF22D411E000E7ED65 /* Debug */ = {
+		4EDFA4C122D7CE8C00FEF555 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +196,7 @@
 			};
 			name = Debug;
 		};
-		4E559CB022D411E000E7ED65 /* Release */ = {
+		4EDFA4C222D7CE8C00FEF555 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +248,7 @@
 			};
 			name = Release;
 		};
-		4E559CB222D411E000E7ED65 /* Debug */ = {
+		4EDFA4C422D7CE8C00FEF555 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -257,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		4E559CB322D411E000E7ED65 /* Release */ = {
+		4EDFA4C522D7CE8C00FEF555 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -269,25 +269,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E559CA522D411E000E7ED65 /* Build configuration list for PBXProject "Countdown" */ = {
+		4EDFA4B722D7CE8C00FEF555 /* Build configuration list for PBXProject "CountdownReadline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E559CAF22D411E000E7ED65 /* Debug */,
-				4E559CB022D411E000E7ED65 /* Release */,
+				4EDFA4C122D7CE8C00FEF555 /* Debug */,
+				4EDFA4C222D7CE8C00FEF555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E559CB122D411E000E7ED65 /* Build configuration list for PBXNativeTarget "Countdown" */ = {
+		4EDFA4C322D7CE8C00FEF555 /* Build configuration list for PBXNativeTarget "CountdownReadline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E559CB222D411E000E7ED65 /* Debug */,
-				4E559CB322D411E000E7ED65 /* Release */,
+				4EDFA4C422D7CE8C00FEF555 /* Debug */,
+				4EDFA4C522D7CE8C00FEF555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4E559CA222D411E000E7ED65 /* Project object */;
+	rootObject = 4EDFA4B422D7CE8C00FEF555 /* Project object */;
 }
