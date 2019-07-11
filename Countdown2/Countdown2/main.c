@@ -3,7 +3,8 @@
 //  Countdown2
 //
 //  Created by Mathieu Rancourt on 2019-07-11.
-//  Copyright © 2019 Big Nerd Ranch. All rights reserved.
+//  This time i've done all the coding.
+//  Note: Although this does fuffil the challenge guidelines, It does not fully utilize continue/break in spots where it potentially could.
 //
 
 #include <stdio.h>
@@ -12,19 +13,37 @@ int main(int argc, const char * argv[]) {
     
     
     int number = 256;
+    int dividingFactor = 8;
+    int incrementalValue = 3;
     
+   //Prints the original number
+    if ( number % dividingFactor == 0 ) {
+        printf("%d is divisible\n", number);
+    }
+    
+    
+    //Loop for the rest of the numbers
     for (int i = number; i > 0;) {
+
+        i=i-incrementalValue;
         
-        
-        printf("%d\n", i);
-        
-        i=i-3;
-        
-        if ( i % 8 == 0) {
-            printf("%d  -- divisible!\n", i);
+        if ( i % dividingFactor == 0 ) {
+            printf("%d is divisible\n", i);
+        }
+       
+            else {
+                printf("%d\n", i);
+                }
+
+        if (i-incrementalValue < 0){
+            //Possibility to add something.
+            printf(" ");
+            break;
         }
         
-    }
+        
+        
+        }
     
     return 0;
 }
