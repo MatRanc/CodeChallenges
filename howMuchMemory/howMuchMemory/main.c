@@ -17,7 +17,6 @@ int main(int argc, const char * argv[]) {
     
     printf("A short int takes %zu bytes of RAM\n", sizeof(a));
     
-
     
     return 0;
 }
