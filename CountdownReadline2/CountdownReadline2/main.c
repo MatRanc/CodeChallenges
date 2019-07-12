@@ -37,7 +37,7 @@ int main(int argc, const char * argv[]) {
     
     
     if (incrementalValue < 0){
-        printf("ERROR: code 0\n Negative numbers are forbidden, please use a positive number.\n");
+        printf("ERROR: Negative numbers are forbidden, please use a positive number.\n");
         exit(1);
     }
     
