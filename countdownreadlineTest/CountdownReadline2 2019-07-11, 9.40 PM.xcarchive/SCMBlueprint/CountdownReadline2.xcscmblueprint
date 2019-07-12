@@ -1,0 +1,26 @@
+{
+  "DVTSourceControlWorkspaceBlueprintLocationsKey" : {
+    "C7E41A6C8E84A9F45CA4F757A0D7790C2BE9F7AF" : {
+      "DVTSourceControlBranchIdentifierKey" : "master",
+      "DVTSourceControlLocationRevisionKey" : "c083c5d9d41296df242b65e74d14d8b538f3383c",
+      "DVTSourceControlBranchOptionsKey" : 4,
+      "DVTSourceControlBranchRemoteNameKey" : "origin",
+      "DVTSourceControlWorkspaceBlueprintLocationTypeKey" : "DVTSourceControlBranch"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C7E41A6C8E84A9F45CA4F757A0D7790C2BE9F7AF",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9FAEFE7E-99DB-4EE3-A6F3-1078026CC3C4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C7E41A6C8E84A9F45CA4F757A0D7790C2BE9F7AF" : "CodeChallenges\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CountdownReadline2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CountdownReadline2\/CountdownReadline2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MatRanc\/CodeChallenges.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C7E41A6C8E84A9F45CA4F757A0D7790C2BE9F7AF"
+    }
+  ]
+}
