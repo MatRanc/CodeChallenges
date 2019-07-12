@@ -3,7 +3,7 @@
 //  CountdownReadline2
 //
 //  Created by Mathieu Rancourt on 2019-07-11.
-//  Copyright © 2019 Big Nerd Ranch. All rights reserved.
+//  Wrote this all by myself B-)
 //
 
 //Used in readline
