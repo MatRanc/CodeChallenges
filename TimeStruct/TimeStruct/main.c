@@ -11,26 +11,25 @@
 
 int main(int argc, const char * argv[]) {
 
+    //Today seconds
     long secondsSince1970 = time(NULL);
+    printf("It has been %ld seconds since 1970\n", secondsSince1970);
+    
+    //Today's date
     struct tm now;
     localtime_r(&secondsSince1970, &now);
+    printf("The time is %d:%d:%d\n", now.tm_hour, now.tm_min, now.tm_sec);
     
-    long howManySeconds = 4000000;
+    //Future seconds
+    long fourMillionSecondsLater = secondsSince1970 + 4000000;
+    printf("Four million seconds since 1970 is %ld.\n", fourMillionSecondsLater);
     
-    int day = now.tm_mday;
-    int month = now.tm_mon + 1;
-    int year = now.tm_year + 1900;
+    //Create a new struct with tm called futureTime and define it with the added 4 million seconds. 
     
-    time(NULL);
-    printf("%d-%d-%d\n", day, month, year);
+   //Future Date
+    struct tm futureTime;
+    localtime_r(&fourMillionSecondsLater, &futureTime);
+    printf("The date in four million seconds will be %d-%d-%d\n", futureTime.tm_mday, futureTime.tm_mon+1, futureTime.tm_year+1900);
     
     return 0;
 }
-
-/*
-long secondsSince1970 = time(NULL);
-printf("It has been %ld seconds since 1970\n", secondsSince1970);
-struct tm now;
-localtime_r(&secondsSince1970, &now);
-printf("The time is %d:%d:%d\n", now.tm_hour, now.tm_min, now.tm_sec);
-*/
