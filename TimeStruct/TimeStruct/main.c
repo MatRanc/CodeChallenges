@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <time.h>
 
+//Challenge: create a program to show you the time in four million seconds
 
 int main(int argc, const char * argv[]) {
 
@@ -24,7 +25,7 @@ int main(int argc, const char * argv[]) {
     long fourMillionSecondsLater = secondsSince1970 + 4000000;
     printf("Four million seconds since 1970 is %ld.\n", fourMillionSecondsLater);
     
-    //Create a new struct with tm called futureTime and define it with the added 4 million seconds. 
+    //Create a new struct with tm called futureTime and define it with the added 4 million seconds.
     
    //Future Date
     struct tm futureTime;
