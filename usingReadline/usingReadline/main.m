@@ -22,56 +22,60 @@ int main(int argc, const char * argv[]) {
             //Defines variables
             const char *cImputNumber = readline(NULL);
             NSString *imputNumber = [NSString stringWithUTF8String:cImputNumber];
+            NSInteger imputNumberInt = [imputNumber intValue];
         
+
             //Promps User for dividing factor
             NSLog(@"Dividing factor:");
-            const char *imputDividingFactor = readline(NULL);
-            
-            
+            const char *cImputDividingFactor = readline(NULL);
+            NSString *imputDividngFactor = [NSString stringWithUTF8String:cImputDividingFactor];
+            NSInteger dividingFactorInt = [imputDividngFactor intValue];
+       
+        
             //Prompts user for incrementalValue
             NSLog(@"Incremental value:");
-            const char *imputIncrementalValue = readline(NULL);
+            const char *cImputIncrementalValue = readline(NULL);
+            NSString *imputIncrementalValue = [NSString stringWithUTF8String:cImputIncrementalValue];
+            NSInteger incrementalValueInt = [imputIncrementalValue intValue];
         
-            int number = imputNumber;
-            int dividingFactor = atoi(imputDividingFactor);
-            int incrementalValue = atoi(imputIncrementalValue);
-            
-            
-            if (incrementalValue < 0){
+            //Safety error to prevent freezing
+            if (imputIncrementalValue < 0){
                 NSLog(@"ERROR: Negative numbers are forbidden, please use a positive number.");
-                exit(1);
-            }
-            
+                exit(1);        }
+        
+        
             //Now for the actual code.
             
             //Prints the original number
-            if ( number % dividingFactor == 0 ) {
-                NSLog(@"%d is divisible", number);
+            if ( imputNumberInt % dividingFactorInt == 0 ) {
+                NSLog(@"%@ is divisible", imputNumber);
             }
             
-            
+        
             //Loop for the rest of the numbers
-            for (int i = number; i > 0;) {
+            for (NSInteger i = imputNumberInt; i > 0;) {
                 
-                i=i-incrementalValue;
+                i=i-incrementalValueInt;
                 
-                if ( i % dividingFactor == 0 ) {
-                    NSLog(@"%d is divisible", i);
+                if ( i % dividingFactorInt == 0 ) {
+                    NSLog(@"%ld is divisible", (long)i);
                 }
                 
                 else {
-                    NSLog(@"%d", i);
+                    NSLog(@"%ld", (long)i);
                 }
                 
-                if (i-incrementalValue < 0){
+                if (i-incrementalValueInt < 0){
                     //Possibility to add something.
                     NSLog(@" ");
                     break;
                     
                     
-                }
             }
         }
+    }
+    
+    
 
 
         
