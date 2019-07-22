@@ -2,3 +2,5 @@ This is a collection of my completed challenges from the BigNerdRanch book on Ob
 
 The book starts off with C, but will eventually progress into Obj-c. 
 Feel free to use the challenges for refrence if you are stuck or something.
+
+License: UIIDCJROLIIFTIWUT V1, Use it I don't care just respect other licenses if I forgot I used them.
