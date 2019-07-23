@@ -28,16 +28,12 @@ int main(int argc, const char * argv[]) {
         NSLog(@"My grocery list is:");
         for (NSMutableArray *d in groceryList){
             NSLog(@"%@", d);
-        }
+            }
         
             [groceryList removeObjectAtIndex:4];
-        NSLog(@"The grocery list is now %@", groceryList);
-        
-            
-            
-        }
-        
-        
-
+        NSLog(@"Now the grocery list is:%@", groceryList);
+    
+    }
+    
     return 0;
 }
