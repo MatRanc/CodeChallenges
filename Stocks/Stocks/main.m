@@ -60,6 +60,16 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", teslaName, teslaStockCost, teslaStockValue);
 
         
+        
+    /* Im going to try and make it all work from one NSLog/printf as thats how arrays should work but for now i dont really understand and its too late for me to continue, future me this is a good site with info https://stackoverflow.com/questions/28522441/trying-to-create-a-portfolio-of-stocks-with-a-total-value-in-objective-c-but-un
+         its not really info as its someone's competed one but if you take a quick glance and see how hes doing it t could help. anyway its too late and im tired and really dont want to keep typing. ok bye.
+         
+        NSMutableArray *allStocks = [NSMutableArray arrayWithObjects:apple, google, tesla, nil];
+        
+        NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", apple, google, tesla);
+    */
+     
+        
     }
     return 0;
 }
