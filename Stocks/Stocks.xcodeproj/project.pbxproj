@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E024D2D22E90A6B002C75E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E024D2C22E90A6B002C75E6 /* main.m */; };
 		4E024D3522E90CD7002C75E6 /* BNRStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E024D3422E90CD7002C75E6 /* BNRStockHolding.m */; };
+		4E1AECC322F379CF007D465D /* BNRForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1AECC222F379CF007D465D /* BNRForeignStockHolding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		4E024D2C22E90A6B002C75E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E024D3322E90CD7002C75E6 /* BNRStockHolding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRStockHolding.h; sourceTree = "<group>"; };
 		4E024D3422E90CD7002C75E6 /* BNRStockHolding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRStockHolding.m; sourceTree = "<group>"; };
+		4E1AECC122F379CE007D465D /* BNRForeignStockHolding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRForeignStockHolding.h; sourceTree = "<group>"; };
+		4E1AECC222F379CF007D465D /* BNRForeignStockHolding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRForeignStockHolding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				4E024D2C22E90A6B002C75E6 /* main.m */,
+				4E1AECC122F379CE007D465D /* BNRForeignStockHolding.h */,
+				4E1AECC222F379CF007D465D /* BNRForeignStockHolding.m */,
 				4E024D3322E90CD7002C75E6 /* BNRStockHolding.h */,
 				4E024D3422E90CD7002C75E6 /* BNRStockHolding.m */,
 			);
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1AECC322F379CF007D465D /* BNRForeignStockHolding.m in Sources */,
 				4E024D2D22E90A6B002C75E6 /* main.m in Sources */,
 				4E024D3522E90CD7002C75E6 /* BNRStockHolding.m in Sources */,
 			);

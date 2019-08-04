@@ -8,10 +8,27 @@
 
 #import <Foundation/Foundation.h>
 #import "BNRStockHolding.h"
+#import "BNRForeignStockHolding.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
+        
+        //Testing currency rates
+        BNRForeignStockHolding *audi = [[BNRForeignStockHolding alloc]init];
+        [audi setConversionRate:1.11];
+        [audi setCurrentSharePrice:798];
+        [audi setPurchaseSharePrice:782];
+        [audi setNumberOfShares:1];
+        
+        float audiStockValue = [audi valueInDollars];
+        float audiStockCost = [audi costInDollars];
+        
+        printf("cost before conversion = %f\ncost after conversion = %f\n\n", audiStockCost, audiStockValue);
+        
+        
+        
+        
         //Setup the stocks
         BNRStockHolding *apple = [[BNRStockHolding alloc]init];
         BNRStockHolding *google = [[BNRStockHolding alloc]init];
