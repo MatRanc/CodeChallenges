@@ -17,10 +17,15 @@
     return purchaseSharePrice;
 }
 
+
+
+
 - (void)setPurchaseSharePrice:(float)p
 {
     purchaseSharePrice = p;
 }
+
+
 
 
 - (float)currentSharePrice
@@ -28,10 +33,21 @@
     return currentSharePrice;
 }
 
+
+
+
 - (void)setCurrentSharePrice:(float)c
 {
     currentSharePrice = c;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -46,7 +62,6 @@
 }
 
 
-
 - (float)costInDollars
 {
     float bought = [self purchaseSharePrice];
@@ -58,7 +73,6 @@
     float current = [self currentSharePrice];
     return [self numberOfShares] * current;
 }
-
 
 
 @end
