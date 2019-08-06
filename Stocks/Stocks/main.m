@@ -15,15 +15,17 @@ int main(int argc, const char * argv[]) {
 
         
         //Foreign Currency Conversion
+        //For foreign stocks make sure to add the conversion rate!
         BNRForeignStockHolding *audi = [[BNRForeignStockHolding alloc]init];
         [audi setConversionRate:1.11];
         [audi setCurrentSharePrice:798];
         [audi setPurchaseSharePrice:782];
         [audi setNumberOfShares:1];
         [audi setStockName:@"Audi"];
-   
+        
+        //To test if the conversion works look at your imput numbers and then the output
         //printf("cost before conversion = %f\ncost after conversion = %f\n\n", audi.costInDollars, audi.valueInDollars);
-
+        
         
         //Setup the stocks
         BNRStockHolding *apple = [[BNRStockHolding alloc]init];
@@ -38,7 +40,6 @@ int main(int argc, const char * argv[]) {
         [apple  setStockName:@"Apple"];
         
         //NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", apple.stockName, apple.costInDollars, apple.valueInDollars);
-         
         
         //Google details
         [google setCurrentSharePrice:1139.73];
@@ -47,7 +48,6 @@ int main(int argc, const char * argv[]) {
         [google setStockName:@"Google"];
         
         //NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", google.stockName, google.costInDollars, google.valueInDollars);
-
         
         //Tesla details
         [tesla setCurrentSharePrice:260.17];
@@ -65,8 +65,10 @@ int main(int argc, const char * argv[]) {
         [stocksCompanyArray addObject: tesla];
         [stocksCompanyArray addObject: audi];
         
+        //Dont really understand this part unfortunately
         for(BNRStockHolding *stocksDataArray in stocksCompanyArray){
             
+            //Add stock gain/loss (could make the nslog reflect this dynamically saying gain/loss instead of just "change"
             float valueChange = stocksDataArray.valueInDollars / stocksDataArray.costInDollars;
             
             NSLog(@"Your %@ stocks were bought for %0.2f and are now worth %0.2f which is a %0.2f%% change", stocksDataArray.stockName, stocksDataArray.costInDollars, stocksDataArray.valueInDollars, valueChange);
@@ -85,7 +87,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", apple, google, tesla);
      
      edit:
-     did it :)
+     did it :) and that completion is a complete mess and should not be followed, my version is much cleaner and actually works.
     */
      
    
