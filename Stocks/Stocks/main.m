@@ -20,6 +20,7 @@ int main(int argc, const char * argv[]) {
         [audi setCurrentSharePrice:798];
         [audi setPurchaseSharePrice:782];
         [audi setNumberOfShares:1];
+        [audi setStockName:@"Audi"];
    
         //printf("cost before conversion = %f\ncost after conversion = %f\n\n", audi.costInDollars, audi.valueInDollars);
 
@@ -34,27 +35,27 @@ int main(int argc, const char * argv[]) {
         [apple  setCurrentSharePrice:208.12];
         [apple  setPurchaseSharePrice:197.86];
         [apple  setNumberOfShares:4];
+        [apple  setStockName:@"Apple"];
         
-        NSString *appleName = @"Apple";
-        //NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", appleName, apple.costInDollars, apple.valueInDollars);
+        //NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", apple.stockName, apple.costInDollars, apple.valueInDollars);
          
         
         //Google details
         [google setCurrentSharePrice:1139.73];
         [google setPurchaseSharePrice: 1122.89];
         [google setNumberOfShares:1];
+        [google setStockName:@"Google"];
         
-        NSString *googleName = @"Google";
-        //NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", googleName, google.costInDollars, google.valueInDollars);
+        //NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", google.stockName, google.costInDollars, google.valueInDollars);
 
         
         //Tesla details
         [tesla setCurrentSharePrice:260.17];
         [tesla setPurchaseSharePrice:317.22];
         [tesla setNumberOfShares:3];
+         [tesla setStockName:@"Tesla"];
         
-        NSString *teslaName = @"Tesla";
-        //NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", teslaName, tesla.costInDollars, tesla.valueInDollars);
+        //NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", tesla.stockName, tesla.costInDollars, tesla.valueInDollars);
 
         
         //Add stocks to the array
@@ -64,28 +65,30 @@ int main(int argc, const char * argv[]) {
         [stocksCompanyArray addObject: tesla];
         [stocksCompanyArray addObject: audi];
         
-        
         for(BNRStockHolding *stocksDataArray in stocksCompanyArray){
-            NSLog(@" Your (placeholder) stocks were bought for %0.2f, now worth %0.2f",  stocksDataArray.costInDollars, stocksDataArray.valueInDollars);
+            
+            float valueChange = stocksDataArray.valueInDollars / stocksDataArray.costInDollars;
+            
+            NSLog(@"Your %@ stocks were bought for %0.2f and are now worth %0.2f which is a %0.2f%% change", stocksDataArray.stockName, stocksDataArray.costInDollars, stocksDataArray.valueInDollars, valueChange);
+        
         }
         
         
         
         
     /*
-    augest3:
      Im going to try and make it all work from one NSLog/printf as thats how arrays should work but for now i dont really understand and its too late for me to continue, future me this is a good site with info https://stackoverflow.com/questions/28522441/trying-to-create-a-portfolio-of-stocks-with-a-total-value-in-objective-c-but-un
          its not really info as its someone's competed one but if you take a quick glance and see how hes doing it t could help. anyway its too late and im tired and really dont want to keep typing. ok bye.
          
         NSMutableArray *allStocks = [NSMutableArray arrayWithObjects:apple, google, tesla, nil];
         
         NSLog(@"Your %@ stocks were bought for %0.2f and are worth %0.2f", apple, google, tesla);
+     
+     edit:
+     did it :)
     */
      
-        
-        
-        
-        
+   
     }
     return 0;
 }
