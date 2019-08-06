@@ -10,6 +10,7 @@
 		4E024D2D22E90A6B002C75E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E024D2C22E90A6B002C75E6 /* main.m */; };
 		4E024D3522E90CD7002C75E6 /* BNRStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E024D3422E90CD7002C75E6 /* BNRStockHolding.m */; };
 		4E1AECC322F379CF007D465D /* BNRForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1AECC222F379CF007D465D /* BNRForeignStockHolding.m */; };
+		4E9F70F222FA248300D974FD /* BNRPortfolio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F70F122FA248300D974FD /* BNRPortfolio.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		4E024D3422E90CD7002C75E6 /* BNRStockHolding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRStockHolding.m; sourceTree = "<group>"; };
 		4E1AECC122F379CE007D465D /* BNRForeignStockHolding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRForeignStockHolding.h; sourceTree = "<group>"; };
 		4E1AECC222F379CF007D465D /* BNRForeignStockHolding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRForeignStockHolding.m; sourceTree = "<group>"; };
+		4E9F70F022FA248300D974FD /* BNRPortfolio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRPortfolio.h; sourceTree = "<group>"; };
+		4E9F70F122FA248300D974FD /* BNRPortfolio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRPortfolio.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				4E024D2C22E90A6B002C75E6 /* main.m */,
+				4E9F70F022FA248300D974FD /* BNRPortfolio.h */,
+				4E9F70F122FA248300D974FD /* BNRPortfolio.m */,
 				4E1AECC122F379CE007D465D /* BNRForeignStockHolding.h */,
 				4E1AECC222F379CF007D465D /* BNRForeignStockHolding.m */,
 				4E024D3322E90CD7002C75E6 /* BNRStockHolding.h */,
@@ -129,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E1AECC322F379CF007D465D /* BNRForeignStockHolding.m in Sources */,
+				4E9F70F222FA248300D974FD /* BNRPortfolio.m in Sources */,
 				4E024D2D22E90A6B002C75E6 /* main.m in Sources */,
 				4E024D3522E90CD7002C75E6 /* BNRStockHolding.m in Sources */,
 			);
@@ -251,18 +257,22 @@
 		4E024D3122E90A6B002C75E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MRYMJMR49S;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		4E024D3222E90A6B002C75E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MRYMJMR49S;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

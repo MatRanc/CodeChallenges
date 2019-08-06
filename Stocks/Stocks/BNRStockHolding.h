@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRPortfolio.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BNRStockHolding : NSObject
+@interface BNRStockHolding : BNRPortfolio
 
 {
     
