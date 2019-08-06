@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
     float purchaseSharePrice;
     float currentSharePrice;
     int numberOfShares;
-    
+
 }
 
 
@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (float)costInDollars;
 - (float)valueInDollars;
 
+
 @end
 
 NS_ASSUME_NONNULL_END
+

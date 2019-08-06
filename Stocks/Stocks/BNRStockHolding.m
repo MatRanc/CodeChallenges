@@ -23,9 +23,6 @@
 }
 
 
-
-
-
 - (float)currentSharePrice
 {
     return currentSharePrice;
@@ -35,8 +32,6 @@
 {
     currentSharePrice = c;
 }
-
-
 
 
 
@@ -52,7 +47,6 @@
 
 
 
-
 - (float)costInDollars
 {
     float bought = [self purchaseSharePrice];
@@ -64,5 +58,7 @@
     float current = [self currentSharePrice];
     return [self numberOfShares] * current;
 }
+
+
 
 @end
