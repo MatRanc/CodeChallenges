@@ -11,8 +11,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BNRPortfolio : NSObject
+@class BNRStockHolding;
 
+@interface BNRPortfolio : NSObject
+{
+    NSMutableArray *_holdings;
+}
+
+@property (nonatomic, copy) NSArray* _holdings;
+- (void)addHolding:(BNRStockHolding *)s;
+- (unsigned int)valueOfPortfolio;
 
 @end
 
