@@ -6,35 +6,31 @@
 //  Copyright © 2019 Big Nerd Ranch. All rights reserved.
 //
 
+
 #import "BNRPortfolio.h"
+#import "BNRStockHolding.h"
 
+@implementation BNRPortfolio
 
-@implementation BNRPortfolio    
-
-- (void)setHoldings:(NSArray *)s
+//still lost, thankfully https://github.com/JayDz/Big_Nerd_Ranch_Objective_c_challenges/tree/master/chapter_21 saved me
+-(void) addHolding:(BNRStockHolding *)holding
 {
-    _holdings = [s mutableCopy];
-}
-
-- (NSArray *)holdings
-{
-    return [_holdings copy];
-}
-
--(void)addHolding:(BNRStockHolding *)s
-{
-    if(!_holdings){
+    if (!_holdings)
         _holdings = [[NSMutableArray alloc]init];
-    }
-    [_holdings addObject:s];
+    
+    [_holdings addObject:holding];
 }
 
-- (unsigned int)valueOfPortfolio
+-(float) currentValue
 {
-    unsigned int sum = 0;
-    for (BNRStockHolding *s in _holdings){
+    float value = 0;
+    for (BNRStockHolding* stock in _holdings) {
+        float cost = [stock costInDollars];
+        float market = [stock valueInDollars];
+        
+        value += (market - cost);
     }
-    return sum;
+    return value;
 }
 
 @end

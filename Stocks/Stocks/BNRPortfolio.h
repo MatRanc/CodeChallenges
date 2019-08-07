@@ -11,16 +11,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+//https://github.com/JayDz/Big_Nerd_Ranch_Objective_c_challenges/tree/master/chapter_21 i am 100% lost
 @class BNRStockHolding;
 
 @interface BNRPortfolio : NSObject
 {
-    NSMutableArray *_holdings;
+    NSMutableArray* _holdings;
 }
 
-@property (nonatomic, copy) NSArray* _holdings;
-- (void)addHolding:(BNRStockHolding *)s;
-- (unsigned int)valueOfPortfolio;
+-(void) addHolding:(BNRStockHolding*) holding;
+
+-(float) currentValue;
 
 @end
 

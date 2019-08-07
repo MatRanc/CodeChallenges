@@ -77,6 +77,20 @@ int main(int argc, const char * argv[]) {
         
         
         
+        //I STOLE THIS CODE AND AM NOT PROUD OF IT. I DONT KNOW WHAT IM DOING :(
+        BNRPortfolio* porfolio = [[BNRPortfolio alloc]init];
+        [porfolio addHolding:apple];
+        [porfolio addHolding:google];
+        [porfolio addHolding:tesla];
+        [porfolio addHolding:audi];
+
+        
+        NSLog(@"Value of portfolio is: $%.2f\n", [porfolio currentValue]);
+        
+        
+        
+        
+        
         
     /*
      Im going to try and make it all work from one NSLog/printf as thats how arrays should work but for now i dont really understand and its too late for me to continue, future me this is a good site with info https://stackoverflow.com/questions/28522441/trying-to-create-a-portfolio-of-stocks-with-a-total-value-in-objective-c-but-un
